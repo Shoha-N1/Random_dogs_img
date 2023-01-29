@@ -39,13 +39,12 @@
 
 
 let elButton = document.querySelector("[data-button]")
-let API_URL = "tps://dog.ceo/api/breeds/image/random";
+let API_URL = "https://dog.ceo/api/breeds/image/random";
 let elImg = document.querySelector("[data-img]")
 
 
 
 elButton.addEventListener("click", () => {
-
      renderUrl()
 })
 
@@ -54,7 +53,7 @@ elButton.addEventListener("click", () => {
     let res = await fetch(`${API_URL}`);
     let rand = await res.json();
 
-    elImg.src = rand.picsum
+    elImg.src = rand.message
 
 }
 
