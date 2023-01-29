@@ -39,7 +39,7 @@
 
 
 let elButton = document.querySelector("[data-button]")
-let API_URL = "https://picsum.photos/200/300";
+let API_URL = "tps://dog.ceo/api/breeds/image/random";
 let elImg = document.querySelector("[data-img]")
 
 
